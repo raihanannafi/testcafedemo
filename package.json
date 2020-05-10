@@ -1,0 +1,18 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^11.3.0",
+    "testcafe": "^1.8.4"
+  },
+  "scripts": {
+    "test": "testcafe chrome index.js",
+    "serve:build": "serve -s build",
+    "e2e:ci": "testcafe chrome:headless e2e/*.js — app 'npm serve'"
+  },
+  "author": "",
+  "license": "ISC"
+}
